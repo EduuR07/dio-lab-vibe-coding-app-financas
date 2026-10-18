@@ -1,95 +1,140 @@
-# 💸 Finance Friend (Conversa) — Finanças pessoais com Vibe Coding
+# Finance Friend | Organização Financeira com IA
 
-> Projeto desenvolvido para o desafio [App de Organização de Finanças Pessoais com Vibe Coding](https://github.com/digitalinnovationone/dio-lab-vibe-coding-app-financas), da **DIO**.
+### Projeto desenvolvido para o desafio de Vibe Coding da DIO
 
-A proposta do **Finance Friend**, apresentado na interface como **Conversa**, é facilitar a organização financeira por meio de mensagens simples. Em vez de depender apenas de planilhas ou formulários, a pessoa pode descrever uma receita, uma despesa ou uma meta usando linguagem natural.
+O **Finance Friend**, apresentado na aplicação como **Conversa**, é um projeto de organização de finanças pessoais desenvolvido com o auxílio de Inteligência Artificial, utilizando principalmente o **ChatGPT** para estruturar os requisitos e o **Lovable** para gerar a aplicação.
 
-**Links:** [Aplicação no Lovable](https://chatty-cents-companion.lovable.app/) · [PRD utilizado](PRD.md) · [Repositório deste desafio](https://github.com/EduuR07/dio-lab-vibe-coding-app-financas)
+A ideia é simples: permitir que as pessoas organizem suas finanças de maneira mais prática, utilizando mensagens em linguagem natural em vez de depender exclusivamente de planilhas ou formulários.
 
-## 🎯 Problema e objetivo
+**[Acessar aplicação](https://chatty-cents-companion.lovable.app/)** | **[Consultar PRD completo](PRD.md)** | **[Desafio original da DIO](https://github.com/digitalinnovationone/dio-lab-vibe-coding-app-financas)**
 
-Muitas pessoas deixam de acompanhar seus gastos porque registrar cada movimentação pode ser trabalhoso. A ideia foi criar uma experiência mais simples e intuitiva, especialmente para quem está começando a cuidar das próprias finanças.
+---
 
-O objetivo do MVP é explorar três ações principais: **registrar movimentações por conversa**, **organizar os dados financeiros** e **visualizar um resumo claro das receitas, despesas e metas**.
+## Sobre o projeto
 
-## 🧠 Como utilizei Vibe Coding
+O projeto surgiu da proposta apresentada no bootcamp da DIO: desenvolver o conceito de um aplicativo de finanças pessoais utilizando Vibe Coding.
 
-Comecei escrevendo um **PRD (Product Requirements Document)** com o contexto do problema, o público-alvo, as funcionalidades, as regras de negócio e os critérios de experiência. Revisei a especificação com auxílio do ChatGPT e a utilizei para orientar a geração da aplicação no **Lovable**.
+Em vez de criar apenas uma descrição teórica, decidi explorar até onde conseguiria chegar utilizando ferramentas de IA no processo de desenvolvimento.
 
-Também incluí o **Design Universal** como princípio do produto: linguagem compreensível, boa legibilidade, navegação clara e cuidado para não depender apenas de cores. Esses requisitos orientaram o projeto, mas a acessibilidade completa ainda depende de testes específicos.
+O resultado foi um protótipo web publicado pelo Lovable, com interface para acompanhamento financeiro, registro de movimentações, metas e interação por conversa.
 
-📄 **[Ler o PRD original enviado ao Lovable](PRD.md)**
+A proposta central é permitir que o usuário informe suas movimentações financeiras de maneira simples, por exemplo:
 
-## 🖥️ Telas e funcionalidades propostas
+- "Gastei R$ 35 no almoço hoje."
+- "Recebi R$ 1.500 de salário."
+- "Quanto eu gastei este mês?"
+- "Quero juntar R$ 3.000 para comprar um notebook."
+
+A intenção é que o aplicativo interprete essas informações e facilite a organização dos dados financeiros.
+
+## Como desenvolvi a ideia
+
+### 1. Planejamento e criação do PRD
+
+Antes de utilizar o Lovable, comecei estruturando um **PRD (Product Requirements Document)** com o auxílio do ChatGPT.
+
+Nesse documento, defini o problema que o aplicativo deveria resolver, o público-alvo, as funcionalidades, as regras de negócio, os fluxos de navegação e os critérios de validação.
+
+Também incluí o conceito de **Design Universal**, pensando em uma aplicação que pudesse oferecer uma boa experiência para pessoas com diferentes níveis de familiaridade com tecnologia e diferentes necessidades de acessibilidade.
+
+Esse cuidado influenciou os requisitos de navegação, legibilidade, contraste, feedback ao usuário e simplicidade da interface.
+
+O documento completo utilizado como orientação está disponível em **[PRD.md](PRD.md)**.
+
+### 2. Desenvolvimento com Lovable
+
+Com o PRD estruturado, utilizei o Lovable para transformar a especificação em uma aplicação web.
+
+Uma das partes mais interessantes foi observar como a ferramenta interpretou as instruções e gerou uma interface com diferentes páginas, componentes e fluxos de navegação.
+
+Durante o processo, também encontrei algumas limitações, principalmente relacionadas à quantidade de créditos disponíveis no plano gratuito. Isso me fez perceber a importância de definir prioridades e organizar melhor as solicitações enviadas à IA.
+
+Mesmo com essas limitações, consegui chegar a uma versão publicada da aplicação.
+
+### 3. Resultado obtido
 
 A versão gerada apresenta as seguintes áreas:
 
 | Área | Finalidade |
-| --- | --- |
-| **Painel** | Exibir receitas, despesas, saldo, gastos por categoria e um resumo de metas. |
-| **Conversar** | Permitir o registro e a consulta de informações financeiras por mensagens. |
-| **Transações** | Organizar movimentações, filtrar registros e oferecer cadastro manual. |
-| **Metas** | Criar objetivos de economia e acompanhar seu progresso. |
-| **Conta** | A aplicação também apresentou fluxo de cadastro com verificação por e-mail. |
+|---|---|
+| **Painel** | Apresentar receitas, despesas, saldo e resumos financeiros. |
+| **Conversar** | Oferecer uma interface de chat para registrar e consultar informações financeiras. |
+| **Transações** | Organizar movimentações, com opções de filtragem e cadastro manual. |
+| **Metas** | Permitir o planejamento e o acompanhamento de objetivos financeiros. |
+| **Conta** | Oferecer cadastro, login e acesso individual à aplicação. |
 
-> **Nota:** as imagens documentam as interfaces geradas. O cadastro com verificação por e-mail foi experimentado durante o desenvolvimento; as demais operações precisam ser validadas individualmente antes de serem consideradas totalmente testadas.
+Também consegui experimentar o fluxo de cadastro com verificação por e-mail, algo que foi além do que eu inicialmente esperava obter durante a atividade.
 
-### Painel
+**Observação:** as telas apresentadas representam o protótipo desenvolvido. Nem todos os fluxos e requisitos foram submetidos a testes completos de funcionamento, segurança e acessibilidade.
 
-![Painel financeiro com cartões de receitas, despesas e saldo](assets/painel.png)
+## Capturas de tela
 
-### Conversa com o agente financeiro
+### Painel financeiro
 
-![Interface do chat com exemplos de comandos financeiros](assets/chat.png)
+Visão geral das receitas, despesas, saldo e demais informações do usuário.
 
-Exemplos de interações previstas:
+![Painel financeiro](assets/painel.png)
 
-- `Gastei R$ 30 no almoço hoje.`
-- `Recebi R$ 1.500 de salário.`
-- `Quanto eu gastei este mês?`
-- `Quero juntar R$ 3.000 para um notebook.`
+### Conversa com o assistente
 
-### Histórico de transações
+Interface conversacional com sugestões de mensagens para registrar ou consultar movimentações financeiras.
 
-![Tela de transações com filtros e opção de adicionar manualmente](assets/transacoes.png)
+![Interface de conversa](assets/chat.png)
+
+### Transações
+
+Página destinada ao histórico e à organização das movimentações financeiras.
+
+![Página de transações](assets/transacoes.png)
 
 ### Metas financeiras
 
-![Tela de metas com opção de criar um objetivo](assets/metas.png)
+Área dedicada ao cadastro e acompanhamento de objetivos financeiros.
 
-## 🛠️ Ferramentas utilizadas
+![Página de metas](assets/metas.png)
 
-- **ChatGPT:** apoio na revisão e organização dos requisitos do PRD.
-- **Lovable:** geração e pré-visualização da aplicação a partir das instruções em linguagem natural.
-- **GitHub:** documentação e entrega do desafio por meio de um fork do repositório da DIO.
-
-## 🚧 Desafios e aprendizados
+## O que aprendi com o desafio
 
 ### O que funcionou bem?
 
-O que mais me surpreendeu foi conseguir transformar uma especificação escrita em uma aplicação com várias telas e uma identidade visual consistente. A ferramenta gerou o painel, o chat, a área de transações e a área de metas. Também consegui passar pelo processo de criação de conta com verificação por e-mail, algo que eu não esperava ver tão rapidamente.
+O planejamento inicial por meio do PRD ajudou bastante. Ter uma descrição clara do problema, das funcionalidades e do comportamento esperado tornou mais fácil orientar o Lovable.
+
+Também gostei da rapidez com que foi possível transformar uma ideia em uma interface navegável, sem precisar desenvolver manualmente cada componente.
+
+Outro ponto positivo foi conseguir incluir requisitos de Design Universal desde o planejamento, em vez de pensar em acessibilidade somente depois da criação das telas.
 
 ### O que não funcionou como eu esperava?
 
-Meu primeiro PRD ficou muito extenso e solicitava muitas funcionalidades de uma só vez. Durante a geração, o Lovable consumiu os créditos gratuitos disponíveis e pausou o trabalho antes de concluir tudo. Isso me fez perceber que um documento detalhado ajuda a definir o produto, mas não significa que seja uma boa ideia implementar todos os requisitos em uma única solicitação.
+A principal dificuldade foi trabalhar com os limites de créditos do Lovable. Como meu PRD ficou bastante detalhado, percebi que nem sempre é interessante solicitar muitas funcionalidades de uma só vez, principalmente quando existem restrições de uso.
 
-![Lovable com geração pausada por falta de créditos](assets/lovable-creditos.png)
+Além disso, gerar uma interface visualmente completa não significa que todas as funcionalidades estejam prontas ou corretamente implementadas. Ainda é necessário testar os fluxos, validar os dados e verificar se o comportamento corresponde ao que foi solicitado.
 
 ### O que aprendi sobre conversar com IAs?
 
-Aprendi que **clareza, contexto e delimitação de escopo** fazem muita diferença. Não basta pedir “crie um aplicativo”: é importante explicar o problema, definir prioridades e dizer o que realmente precisa estar no MVP. Também entendi que o trabalho não termina quando a IA gera as telas. Ainda é necessário testar os fluxos, conferir os resultados e avaliar se a solução atende ao que foi pedido.
+Aprendi que a qualidade do resultado depende bastante da maneira como explicamos o que queremos.
 
-## 🔍 Próximos passos
+Um prompt bem estruturado precisa apresentar contexto, objetivos, restrições e critérios claros. Ao mesmo tempo, também precisa ter um escopo adequado à ferramenta e aos recursos disponíveis.
 
-- Testar o registro de receitas e despesas pelo chat e a atualização do painel.
-- Verificar a edição e exclusão de transações e o progresso das metas.
-- Avaliar a experiência em dispositivos móveis e com navegação por teclado.
-- Refinar as interpretações de mensagens e os feedbacks de confirmação.
+O desafio me ajudou a entender melhor que Vibe Coding não é simplesmente pedir para uma IA criar um aplicativo. É um processo de planejamento, comunicação, experimentação, avaliação e ajustes.
 
-## 📌 Conclusão
+## Próximos passos
 
-O desafio mostrou, na prática, como o **Vibe Coding** pode acelerar a transformação de uma ideia em um protótipo navegável. Mais importante do que gerar código rapidamente foi aprender a estruturar requisitos, reconhecer limites da ferramenta e ajustar o escopo sem perder o objetivo do produto.
+O Finance Friend ainda pode evoluir bastante. Entre as melhorias que pretendo explorar estão a validação dos registros realizados pelo chat, testes mais completos das funcionalidades financeiras, melhorias de acessibilidade e refinamentos na experiência do usuário.
+
+Também gostaria de aprofundar meus conhecimentos sobre a arquitetura e o código gerado, para compreender melhor as decisões técnicas tomadas durante o desenvolvimento.
+
+## Considerações finais
+
+Esse desafio foi uma oportunidade de experimentar uma abordagem diferente de desenvolvimento de software.
+
+Mais do que obter uma aplicação visualmente pronta, o principal aprendizado foi perceber a importância de saber transformar uma ideia em requisitos claros, avaliar os resultados produzidos pela IA e reconhecer as limitações das ferramentas utilizadas.
+
+O projeto representa um primeiro experimento prático com Vibe Coding e uma base para continuar estudando desenvolvimento de aplicações com apoio de Inteligência Artificial.
 
 ---
 
-**Desenvolvido por Eduardo Rodrigues Bueno** · [GitHub](https://github.com/EduuR07) · Desafio DIO — Vibe Coding
+**Desenvolvido por Eduardo Rodrigues Bueno**
+
+[GitHub](https://github.com/EduuR07) | [LinkedIn](https://www.linkedin.com/in/eduardobueno07/) | [Aplicação](https://chatty-cents-companion.lovable.app/)
+
+*Projeto realizado como parte do desafio de Vibe Coding da Digital Innovation One (DIO).*
